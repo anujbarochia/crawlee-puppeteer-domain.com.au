@@ -1,0 +1,18 @@
+module.exports = [
+  { id: "url", title: "URL" },
+  { id: "photos", title: "Photos" },
+  { id: "postCode", title: "PostCode" },
+  { id: "address", title: "Address" },
+  { id: "price", title: "Price" },
+  { id: "parking", title: "Parking" },
+  { id: "bathRooms", title: "BathRooms" },
+  { id: "bedRooms", title: "Bed Rooms" },
+  { id: "propertyType", title: "Property Type" },
+  { id: "propertySize", title: "Property Size" },
+  { id: "longitude", title: "Longitude" },
+  { id: "latitude", title: "Latitude" },
+  { id: "descriptionTitle", title: "Description Title" },
+  { id: "description", title: "Description" },
+  { id: "agencyName", title: "Agency Name" },
+  { id: "agents", title: "Agents" },
+];
