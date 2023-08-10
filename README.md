@@ -21,8 +21,19 @@ Follow these steps to set up and run the scraping script locally:
 1. Clone this repository: `git clone https://github.com/anujbarochia/crawlee-puppeteer-domain.com.au`
 2. Navigate to the project directory: `cd crawlee-puppeteer-domain.com.au`
 3. Install the required Node.js packages: `npm install`
-4. Run the scraping script: `node index.js`
-5. Enjoy and feel free to make changes as per your requirement.
+4. Create `.env` file in your project directory, you will need to enter 3 variables that are being used in this project (if you wish you can change the way program uses it & apply your own logic)
+````
+PROXY =""
+MANUAL_CAPTCHA = "0"
+CRAWLEE_CHROME_EXECUTABLE_PATH = ""
+````
+    PROXY => This variable takes takes a url from where you are accessing your pool of new proxy address when the website blocks your IP, crawlee will automatically take new proxy address from this pool
+    MANUAL_CAPTCHA => Refer to index.js and have a look at the code for better understanding on how it is being used.
+    CRAWLEE_CHROME_EXECUTABLE_PATH => By default our process would use chromium as a browser but here we are explicitly defining Chrome to be used as the browser, change the path address as per the location in your system, to find executable path type `chrome://version` in the search bar of chrome-in there you will be able to see a variable defined as Executable Path.
+
+5. Run the scraping script: `node index.js`
+6. Enjoy and feel free to make changes as per your requirement.
+
 
 
 
@@ -30,8 +41,7 @@ Follow these steps to set up and run the scraping script locally:
 
 Contributions and suggestions are encouraged! If you encounter issues, have enhancement ideas, or wish to contribute, feel free to open an issue or submit a pull request.
 
-## Warning
----
+## Warning 
 **Please exercise caution and adhere to domain.com.au's terms of use and scraping guidelines when using this script.**
 
 **Disclaimer:** This project is intended for educational and personal use only. The author and contributors are not responsible for any misuse of the scraping code or the data collected.
